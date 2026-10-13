@@ -7,7 +7,7 @@
 :root{--ink:#39283b;--pink:#ff6d9a;--muted:#796b7b}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Georgia,'Times New Roman',serif;background:radial-gradient(circle at 5% 5%,#ffe0eb,transparent 32%),radial-gradient(circle at 95% 80%,#e8ddff,transparent 34%),#fff9f7;min-height:100vh;overflow-x:hidden}button{font:inherit;cursor:pointer;border:0}.top{position:sticky;top:0;z-index:20;padding:12px clamp(12px,3vw,32px);display:flex;justify-content:space-between;align-items:center;gap:10px;background:#fffaf4e8;backdrop-filter:blur(12px);border-bottom:1px solid #f3dce5}.logo{font:700 12px Arial,sans-serif;letter-spacing:.12em;color:#a34b70}nav{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}nav button{background:transparent;border-radius:22px;padding:9px 10px;color:var(--muted);font:12px Arial,sans-serif}nav button.active,nav button:hover{background:#ffe0eb;color:#863b5b}main{max-width:1050px;margin:auto;padding:24px 18px 55px}.page{display:none;min-height:76vh;animation:rise .55s ease}.page.active{display:flex;flex-direction:column;justify-content:center}.center{text-align:center;align-items:center}.eyebrow{font:700 10px Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#ad5579}.hero-title{font-size:clamp(43px,9vw,86px);line-height:.98;letter-spacing:-.045em;margin:18px 0}.script{font-style:italic;color:#c04f7c}.lead{font:15px/1.8 Arial,sans-serif;color:var(--muted);max-width:650px;margin:10px auto 24px}.decor{font-size:clamp(44px,8vw,76px);margin:12px}.pill{background:var(--ink);color:white;border-radius:99px;padding:14px 23px;box-shadow:0 10px 24px #39283b20;transition:.2s}.pill:hover{transform:translateY(-2px)}.pink{background:var(--pink)}.light-btn{background:white;border:1px solid #efd8e2;color:var(--ink);border-radius:99px;padding:11px 17px}.tiny{font:11px/1.6 Arial,sans-serif;color:#988897;margin-top:16px}.section-head{text-align:center;margin:0 auto 25px}.section-head h2{font-size:clamp(34px,6vw,54px);margin:10px 0}.section-head p{font:14px/1.7 Arial,sans-serif;color:var(--muted);max-width:660px;margin:0 auto}.panel{background:#ffffffc9;border:1px solid #fff;box-shadow:0 18px 55px #70435613;border-radius:28px;padding:clamp(18px,4vw,34px)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 
 /* Flip Card Styles & Scroll Fixes */
-.flip-card{perspective:1000px;height:270px;cursor:pointer}.flip-card-inner{position:relative;width:100%;height:100%;text-align:center;transition:transform .6s;transform-style:preserve-3d}.flip-card:hover .flip-card-inner,.flip-card.flipped .flip-card-inner{transform:rotateY(180deg)}.flip-card-front,.flip-card-back{position:absolute;width:100%;height:100%;-webkit-backface-visibility:hidden;backface-visibility:hidden;border-radius:22px;box-shadow:0 8px 20px #7043560d}.flip-card-front{background:linear-gradient(145deg,#ffdce8,#fff1dc);border:1px solid #ffedf3;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:16px}.flip-card-back{background:linear-gradient(145deg,#e6ddff,#fff0f5);border:1px solid #f0e8ff;transform:rotateY(180deg);display:flex;flex-direction:column;justify-content:flex-start;align-items:center;padding:20px 16px;overflow-y:auto}.flip-card:nth-child(2) .flip-card-front{background:linear-gradient(145deg,#e6ddff,#fff0f5)}.flip-card:nth-child(3) .flip-card-front{background:linear-gradient(145deg,#d8f1eb,#fff6de)}.flip-card:nth-child(4) .flip-card-front{background:linear-gradient(145deg,#ffe7bd,#ffdae9)}.flip-card:nth-child(5) .flip-card-front{background:linear-gradient(145deg,#dfe9ff,#fbe5ff)}.flip-card:nth-child(6) .flip-card-front{background:linear-gradient(145deg,#ffe1d7,#fff5dc)}.flip-card .emoji{font-size:36px;margin-bottom:8px}.card-img-emoji{width:65px;height:65px;object-fit:cover;border-radius:50%;margin-bottom:8px;box-shadow:0 4px 10px rgba(0,0,0,0.1)}.flip-card strong{font-size:16px;margin-bottom:6px}.flip-card small{font:11px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#876d7b;margin-top:8px}.flip-card p{font:13px/1.7 Arial,sans-serif;color:#5a4a58;margin:0;padding:10px 0;white-space:pre-line;text-align:center;width:100%}
+.flip-card{perspective:1000px;height:270px;cursor:pointer}.flip-card-inner{position:relative;width:100%;height:100%;text-align:center;transition:transform .6s;transform-style:preserve-3d}.flip-card:hover .flip-card-inner,.flip-card.flipped .flip-card-inner{transform:rotateY(180deg)}.flip-card-front,.flip-card-back{position:absolute;width:100%;height:100%;-webkit-backface-visibility:hidden;backface-visibility:hidden;border-radius:22px;box-shadow:0 8px 20px #7043560d}.flip-card-front{background:linear-gradient(145deg,#ffdce8,#fff1dc);border:1px solid #ffedf3;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:16px}.flip-card-back{background:linear-gradient(145deg,#e6ddff,#fff0f5);border:1px solid #f0e8ff;transform:rotateY(180deg);display:flex;flex-direction:column;justify-content:flex-start;align-items:center;padding:20px 16px;overflow-y:auto}.flip-card:nth-child(2) .flip-card-front{background:linear-gradient(145deg,#e6ddff,#fff0f5)}.flip-card:nth-child(3) .flip-card-front{background:linear-gradient(145deg,#d8f1eb,#fff6de)}.flip-card:nth-child(4) .flip-card-front{background:linear-gradient(145deg,#ffe7bd,#ffdae9)}.flip-card:nth-child(5) .flip-card-front{background:linear-gradient(145deg,#dfe9ff,#fbe5ff)}.flip-card:nth-child(6) .flip-card-front{background:linear-gradient(145deg,#ffe1d7,#fff5dc)}.flip-card .emoji{font-size:36px;margin-bottom:8px}.flip-card strong{font-size:16px;margin-bottom:6px}.flip-card small{font:11px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#876d7b;margin-top:8px}.flip-card p{font:13px/1.7 Arial,sans-serif;color:#5a4a58;margin:0;padding:10px 0;white-space:pre-line;text-align:center;width:100%}
 
 /* Custom Scrollbar */
 .flip-card-back::-webkit-scrollbar{width:5px}.flip-card-back::-webkit-scrollbar-track{background:transparent}.flip-card-back::-webkit-scrollbar-thumb{background:#ffb4c9;border-radius:10px}
@@ -23,9 +23,9 @@
 <div class="flip-card" onclick="this.classList.toggle('flipped')">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3926404803508699273" alt="Bubu Dudu Sleeping" class="card-img-emoji">
+      <div class="emoji">🌙</div>
       <strong>LATE NIGHT CONVO</strong>
-      <small>Hover/tap to read</small>
+      <small>Tap to read</small>
     </div>
     <div class="flip-card-back">
       <p>I really missed our late night convo even sometimes till the morning, watching drama together, nothing to discuss but everything.
@@ -39,9 +39,9 @@
 <div class="flip-card" onclick="this.classList.toggle('flipped')">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="https://media.tenor.com/y0VmlfBByBgAAAAe/bubu-bubu-dudu.png" alt="Bubu Shocked" class="card-img-emoji">
+      <div class="emoji">🫵🏻😜</div>
       <strong>YOUR DIFFERENT TONES</strong>
-      <small>Hover/tap to read</small>
+      <small>Tap to read</small>
     </div>
     <div class="flip-card-back">
       <p>When you talk in different tones, sometimes in a child tone, Your soft tone, Your funny way and many more. You have many tones to talk in and the way you switched them for me. Sometimes from serious tone to caring and child tone and sometimes from child tone to serious one when you are getting angry Ahh. (Well i don't like it when you get serious immediately from your soft tone)</p>
@@ -53,9 +53,9 @@
 <div class="flip-card" onclick="this.classList.toggle('flipped')">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="https://i.pinimg.com/736x/8f/58/e9/8f58e9949bfa89a4ff9e2b1ba42813ec.jpg" alt="Dudu Singing" class="card-img-emoji">
+      <div class="emoji">🎙️🎶</div>
       <strong>PREMIUM SUBSCRIPTION TO SPOTIFY</strong>
-      <small>Hover/tap to read</small>
+      <small>Tap to read</small>
     </div>
     <div class="flip-card-back">
       <p>From the way you are singing casually to the side you just sing for me, I like it all. The point on which you sing according to the situation exactly as surprisingly , I just love it. LOVE your voice. 
@@ -68,9 +68,9 @@ And i bet even in a million voices i can identify your voice by once, that's how
 <div class="flip-card" onclick="this.classList.toggle('flipped')">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <div class="emoji">🤍</div>
+      <div class="emoji">🫂🤍</div>
       <strong>YOUR CARE & SUPPORT</strong>
-      <small>Hover/tap to read</small>
+      <small>Tap to read</small>
     </div>
     <div class="flip-card-back">
       <p>You are my strength and support, especially in my recent hard time the care, the love and the support you gave me it really means a lot for me and that actually cure me inside. Your existence in my tough time with a lot of care and love really make me healed today. The trauma from which i was suffering no matter what's the reason but you make me think out of that and now I'm here going to university again and trying to make my life normal again where I was left alone.</p>
@@ -82,9 +82,9 @@ And i bet even in a million voices i can identify your voice by once, that's how
 <div class="flip-card" onclick="this.classList.toggle('flipped')">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <div class="emoji">💖</div>
+      <div class="emoji">😘💖</div>
       <strong>YOUR LOVE SIDE</strong>
-      <small>Hover/tap to read</small>
+      <small>Tap to read</small>
     </div>
     <div class="flip-card-back">
       <p>The way you express your love to me is very precious to me. I accept that in many things i am not that much expressive as you are. Even i don't like many things or words before you came in my life. As i found them "Cringe" whenever i saw people with that things. Your way of calling me "MERI JAAN" and one of the most comfort giving and lovely word from your side i  like is "MERA BACHA" 
@@ -97,9 +97,9 @@ One more thing, once i said i like the word you called me randomly but not frequ
 <div class="flip-card" onclick="this.classList.toggle('flipped')">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <div class="emoji">✨</div>
+      <div class="emoji">❤️✨</div>
       <strong>MANY MORE TO SAY</strong>
-      <small>Hover/tap to read</small>
+      <small>Tap to read</small>
     </div>
     <div class="flip-card-back">
       <p>I have many many more things to say that this space feels less. SO at the end of this beautiful Cards I just want to THANKS you to for everything. The one thing that makes me feel safe and more comfortable with you is this I always want that where ever life takes me the people around me understands me emotionally without judging me. Stay with me with all my flaws without any shame. So the closest persons i felt in my life ever You are one of them before, Now you are on the top and I always wish you stay by my side without making me feel low ever as a human.</p>
