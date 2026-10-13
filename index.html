@@ -182,7 +182,7 @@ You deserve all the happiness with peace, you deserve the success InshaAllah you
 I Love You So Much HUSNAIN 🫂 Allah apko hmesha apni hifazat me rkhe ❤️✨
 </div>
 <p class="tiny">A letter tucked away just for you. ♡</p><button class="pill" style="margin-top:14px" onclick="go('video')">Ready for the final surprise? →</button></div></section>
-<section class="page center" id="video"><div class="section-head"><div class="eyebrow">The last little surprise</div><h2>Just for <span class="script">you</span></h2><p>I saved this part for last. Find your video here and press play whenever you're ready.</p></div><div class="panel video-frame" style="width:100%"><div class="video-box" id="videoBox"><div><div class="play-icon">▶</div><p>Your personalized video will appear here.</p><p style="font:12px Arial,sans-serif">Add your video as <b>assets/birthday-video.mp4</b></p></div></div><p class="final-note">Happy birthday, Bubu ka Dudu. I hope you felt the love behind every little part of this surprise. Here's to more laughter, more memories, and a year that is as wonderful as you deserve. ♡</p><div style="text-align:center;margin:15px 0;"><img src="https://ih1.redbubble.net/image.4859977192.7068/farp,x_large,wall_texture,product,750x1000.jpg" alt="Bubu and Dudu Hug" style="max-width:180px;width:100%;border-radius:18px;box-shadow:0 6px 16px rgba(112,67,86,0.15)"></div><button class="pill pink" onclick="sprinkle();document.getElementById('finalMsg').textContent='One more time: HAPPY BIRTHDAY, DUDU! 💗✨'">Send me one last wish ✨</button><p class="final-note" id="finalMsg"></p><p class="tiny">Made with love by your Bubu ♡</p></div></section>
+<section class="page center" id="video"><div class="section-head"><div class="eyebrow">The last little surprise</div><h2>Just for <span class="script">you</span></h2><p>I saved this part for last. Press play whenever you're ready.</p></div><div class="panel video-frame" style="width:100%"><div class="video-box" id="videoBox"><div><div class="play-icon">▶</div><p>Your personalized video will appear here once unlocked.</p></div></div><p class="final-note">Happy birthday, Bubu ka Dudu. I hope you felt the love behind every little part of this surprise. Here's to more laughter, more memories, and a year that is as wonderful as you deserve. ♡</p><div style="text-align:center;margin:15px 0;"><img src="https://ih1.redbubble.net/image.4859977192.7068/farp,x_large,wall_texture,product,750x1000.jpg" alt="Bubu and Dudu Hug" style="max-width:180px;width:100%;border-radius:18px;box-shadow:0 6px 16px rgba(112,67,86,0.15)"></div><button class="pill pink" onclick="sprinkle();document.getElementById('finalMsg').textContent='One more time: HAPPY BIRTHDAY, DUDU! 💗✨'">Send me one last wish ✨</button><p class="final-note" id="finalMsg"></p><p class="tiny">Made with love by your Bubu ♡</p></div></section>
 </main>
 
 <!-- Passcode Popup Modal -->
@@ -205,6 +205,16 @@ I Love You So Much HUSNAIN 🫂 Allah apko hmesha apni hifazat me rkhe ❤️✨
 // Passcode Configuration
 const SECRET_PASSCODE = "0914"; // CHANGE YOUR PASSCODE HERE
 let videoUnlocked = false;
+
+function loadVideoSurprise() {
+  const box = document.getElementById('videoBox');
+  box.innerHTML = `
+    <video controls playsinline autoplay style="width:100%;height:100%;border-radius:24px;object-fit:cover;">
+      <source src="VID-BDWsh.mp4" type="video/mp4">
+      Your browser does not support playing HTML5 video.
+    </video>
+  `;
+}
 
 function go(id){
   if(id === 'video' && !videoUnlocked){
@@ -236,6 +246,7 @@ function verifyPasscode(){
   if(input === SECRET_PASSCODE){
     videoUnlocked = true;
     closePasscodeModal();
+    loadVideoSurprise();
     go('video');
     sprinkle();
   } else {
@@ -272,5 +283,4 @@ function spinWheel(){
 }
 
 function blowCandles(){document.querySelectorAll('.flame').forEach(f=>f.classList.add('out'));document.getElementById('wishText').textContent='✨ Wish made! May it come true. ✨';document.getElementById('cakeNote').textContent='Candles blown out! Your birthday magic is activated.';document.getElementById('blowBtn').textContent='Candles blown out ✓';sprinkle();}function resetCake(){document.querySelectorAll('.flame').forEach(f=>f.classList.remove('out'));document.getElementById('wishText').textContent='Your wish is safe with the universe…';document.getElementById('cakeNote').textContent='May this year bring you a hundred reasons to smile.';document.getElementById('blowBtn').textContent='🌬️ Blow out the candles';}function openLetter(){document.getElementById('letterText').classList.add('open');document.getElementById('envelope').textContent='💖';document.getElementById('letterBtn').textContent='Your letter is open ♡';document.getElementById('letterBtn').disabled=true;sprinkle();}
-(function(){const box=document.getElementById('videoBox');const v=document.createElement('video');v.controls=true;v.playsInline=true;v.preload='metadata';v.src='assets/birthday-video.mp4';v.addEventListener('loadedmetadata',()=>{box.innerHTML='';box.appendChild(v);});})();
 </script></body></html>
