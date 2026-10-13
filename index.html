@@ -16,6 +16,9 @@
 .wheel-container{position:relative;width:300px;height:300px;margin:20px auto}.wheel-pointer{position:absolute;top:-16px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:16px solid transparent;border-right:16px solid transparent;border-top:28px solid #ff6d9a;z-index:20;filter:drop-shadow(0 3px 6px rgba(0,0,0,0.2))}.wheel{width:100%;height:100%;border-radius:50%;border:8px solid #ffffff;box-shadow:0 12px 30px rgba(112,67,86,0.18);position:relative;overflow:hidden;transition:transform 4s cubic-bezier(0.15,0.9,0.25,1);background:#ffffff}.wheel-sector{position:absolute;width:100%;height:50%;left:0;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;background:#ffffff}.sector-bubu{top:0;border-bottom:2px solid #f3dce5}.sector-dudu{bottom:0}.wheel-sector img{width:100%;height:100%;object-fit:contain;background:#ffffff}.sector-text{position:absolute;z-index:5;font:bold 12px Arial,sans-serif;color:#39283b;background:rgba(255,255,255,0.85);padding:3px 10px;border-radius:12px;backdrop-filter:blur(4px);box-shadow:0 2px 6px rgba(0,0,0,0.1)}.sector-bubu .sector-text{bottom:8px}.sector-dudu .sector-text{top:8px}
 
 .cake-area{text-align:center}.cake-stage{position:relative;width:280px;height:255px;margin:15px auto 0}.cake{position:absolute;bottom:24px;left:35px;width:210px;height:105px;background:linear-gradient(#ffb4c9 0 20%,#fff0f4 20% 74%,#e887a7 74%);border-radius:17px 17px 25px 25px;box-shadow:0 14px 0 #e8a0b6,0 22px 28px #9e506022}.cake:before{content:"";position:absolute;left:-6px;right:-6px;top:-13px;height:30px;background:#fff8fb;border-radius:50%;border-bottom:7px dotted #ffb6ca}.candle{position:absolute;bottom:137px;width:12px;height:49px;background:repeating-linear-gradient(45deg,#fff 0 7px,#d8bdff 7px 14px);border-radius:5px;z-index:3}.c1{left:92px}.c2{left:134px;bottom:145px}.c3{left:176px}.flame{position:absolute;width:18px;height:26px;left:-3px;top:-23px;background:radial-gradient(ellipse at 50% 65%,#fff6a8 0 20%,#ffad43 42%,#ff6c69 72%,transparent 74%);border-radius:50%;transform-origin:50% 90%;animation:flicker .8s infinite alternate}.flame.out{display:none}.cake-face{position:absolute;bottom:56px;left:0;right:0;text-align:center;font-size:24px;z-index:4}.wish{font-style:italic;font-size:19px;color:#a54e70;margin:8px}.quiz-options{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:600px;margin:20px auto}.quiz-options button{background:#fff;border:1px solid #f0d5e0;border-radius:17px;padding:16px 12px;color:var(--ink);transition:.2s}.quiz-options button:hover:not(:disabled){background:#ffe5ee;transform:translateY(-2px)}.quiz-options button:disabled{opacity:.75;cursor:default}.feedback{font:14px/1.6 Arial,sans-serif;color:#9a4169;min-height:28px;margin:12px}.meter{height:12px;background:#f2dce6;border-radius:20px;max-width:500px;margin:18px auto;overflow:hidden}.meter span{display:block;height:100%;width:0;background:linear-gradient(90deg,#ff8bad,#b69aff);transition:width .45s}.heart-big{font-size:48px;animation:beat 1s infinite}.letter{max-width:720px;margin:0 auto}.envelope{font-size:68px;text-align:center;margin-bottom:12px}.letter-text{display:none;white-space:pre-line;background:#fffdfb;border:1px solid #f3dce5;border-radius:18px;padding:23px;margin-top:20px;font:16px/1.9 Georgia,serif}.letter-text.open{display:block;animation:rise .7s ease}.video-frame{max-width:760px;margin:auto;text-align:center}.video-box{aspect-ratio:16/9;width:100%;display:grid;place-items:center;border-radius:24px;background:linear-gradient(135deg,#302337,#945776 55%,#f4b4ca);color:white;overflow:hidden}.video-box video{width:100%;height:100%;object-fit:contain;background:#201923}.play-icon{font-size:58px}.final-note{font:italic 20px/1.8 Georgia,serif;color:#944d6d;max-width:620px;margin:22px auto}.footer{text-align:center;padding:18px;font:11px Arial,sans-serif;color:#a08e9b}.spark{position:fixed;pointer-events:none;z-index:30;animation:floatUp 3.7s linear forwards;font-size:22px}@keyframes rise{from{opacity:0;transform:translateY(13px)}to{opacity:1;transform:translateY(0)}}@keyframes flicker{from{transform:rotate(-5deg) scale(.94)}to{transform:rotate(6deg) scale(1.08)}}@keyframes floatUp{from{transform:translateY(20px) rotate(0);opacity:1}to{transform:translateY(-110vh) rotate(40deg);opacity:0}}@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}@media(max-width:720px){.top{align-items:flex-start;flex-direction:column}.grid{grid-template-columns:repeat(2,1fr)}.flip-card{height:250px}nav{justify-content:flex-start}}@media(max-width:440px){.grid{grid-template-columns:1fr}.flip-card{height:240px}.quiz-options{grid-template-columns:1fr}.cake-stage{transform:scale(.9);margin-top:0;margin-bottom:0}}
+
+/* Passcode Modal Styling */
+.passcode-modal{position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(57,40,59,0.7);backdrop-filter:blur(8px);display:none;justify-content:center;align-items:center;z-index:1000;animation:rise .3s ease}.passcode-modal.show{display:flex}.passcode-box{background:#fff;border-radius:24px;padding:30px 24px;max-width:360px;width:90%;text-align:center;box-shadow:0 20px 40px rgba(0,0,0,0.25);border:2px solid #ffe0eb}.passcode-box h3{margin:10px 0 6px;color:#39283b;font-size:20px}.passcode-box p{font:13px Arial,sans-serif;color:#796b7b;margin:0 0 16px}.passcode-box input{width:100%;padding:12px;border:2px solid #f0d5e0;border-radius:14px;font-size:18px;text-align:center;letter-spacing:4px;outline:none;margin-bottom:12px;color:#39283b}.passcode-box input:focus{border-color:#ff6d9a}.passcode-error{color:#e63946;font:12px Arial,sans-serif;min-height:18px;margin-bottom:10px}.passcode-actions{display:flex;gap:10px;justify-content:center}.passcode-actions button{flex:1;padding:10px;border-radius:12px;font:bold 13px Arial,sans-serif}
 </style></head><body>
 
 <header class="top"><div class="logo">♡ MADE WITH LOVE ❤️ · FOR HUSNAIN</div><nav><button class="active" data-page="welcome">Start</button><button data-page="memories">Memories</button><button data-page="game">Love game</button><button data-page="wheel">Argument Wheel</button><button data-page="cake">Cake</button><button data-page="letter">Hidden letter</button><button data-page="video">Video finale</button></nav></header>
@@ -150,17 +153,17 @@ Many Many happy returns of the day, I know shyd apko ye sab bchon wala lgta he k
 
 Idk k me apni feelings ko words mein kese explain krun, lekin bus itna janti hon k aap meri zindagi me bht special hen even he special word b bht chota he ab. Aap mere liye sirf ek insan nhi ho, aap woh ho jiski khushi mere chehre par smile le ati he or mere dil me sukon lati he k aap khush hen sukon me hen aur jiski preshani mujhe andr se feel hoti he me khud b preshan ho jati hon apko preshan dekh k or bht dua krti hon k aap ki preshani khtm ho 💕
 
-Meri jaan ❤️‍🔥
+Meri jaan,
 Me chahti hon k aap apni life mein bht aage jao, apne sare dreams pore kro Khrab mt socho k time guzr gya ya me kr nai skta, me ne dekha he k aap me bht himmat he bhr potential he kam krne ka ye me is liye nai keh rhi K aap mujhe psnd ho me ne esa waqyi dekha he 😎❤️
 Me aap par bht yaqeen krti hon or krti rhongi always, even un dinon me b jb shyd aap khud par yaqeen nahi kar pao 🙌🏻♥️
-Zindagi mein kbi mushkil waqt aye, kbi aap thak jao ya aap ko lge ke sb kuch bht difficult he tu sab se pehle Allah ko yaad krna or phr ye yad rkhna apne dil me k me apk sath hon chahe zindagi jesi b ho jaye. Me sirf baten nai kr rhi me apne andr himmat b la rhi hr trah k halat ko face krne ki. Me hmesha apka sath dongi 🥺🫂
+Zindagi mein kbi mushkil waqt aye, kbi aap thak jao ya aap ko lge ke sb kuch bht difficult he tu sab se pehle Allah ko yaad krna or phr ye yad rkhna apne dil me k me apk sath hon chahe zindagi jesi b ho jaye. Me sirf baten nai kr rhi me apne andr himmat b la rhi hr trah k halat ko face krne ki. Me hmesha apka sath dongi 🥺💕
 
 Meri life me pehle insan ho jise me ne apni family smja he or manti hon. Kbi mujhe mrd ache nai lge sirf apne baba ache lgte the or Ab meri hr dua me mere baba k bad apka nam hota he 🥺
 Mujhe yaqen he ek din hm b family ki trah Khushi or sukon k sath rhenge 💗
 
 Me chahti hon or dua krti hon k aap ko hmesha esa pyar mile jo apko sukon de, himmat de or hmesha khushiyan de barkton k sath ✨
  
-Aur mere Mutke, men hmesha ye chahongi k meri wajah se apki life me sukoon, khushi aur muskurahat aaye kbi meri traf se apko dukh na mile 🥺💕
+Aur mere Mutke, men hmesha ye chahongi k meri wajah se apki life me sukoon, khushi aur muskurahat aaye kbi meri traf se apko dukh na mile 🥺💗
 
 Allah se meri dua hai k wo apko bht kamyab kre, apki zindagi ko khushiyon se bhar de aur apko wo sb ata kre jo apk liye behtareen ho 
 Ameen 🤲🏻❤️
@@ -168,7 +171,7 @@ Ameen 🤲🏻❤️
 Thank you meri life ka itna special part bnne k liye. Thank you meri duniya me apni jagah bnane se le kr meri duniya bnne k liye. Shyd me har bar apni muhabbat sahi tarah se express nhi kr pati, lekin mera dil apk liye bht kuch feel krta he jise me pori trah shyd kbi bta b na skon.
 I Love You more than I can ever explain 💋
 
-Happy Birthday Again, Mere mutke brown Colour ka Mera Mutka duduu ❤️ 
+Happy Birthday Again, Mere mutke brown Colour ka Mera Mutka duduu❤️
 
 <div style="text-align:center;margin:20px auto;"><img src="https://ih1.redbubble.net/image.4859977192.7068/farp,x_large,wall_texture,product,750x1000.jpg" alt="Bubu and Dudu Hug" style="max-width:180px;width:100%;display:block;margin:0 auto;background:transparent;border:none;box-shadow:none;border-radius:0;"></div>
 
@@ -180,9 +183,71 @@ I Love You So Much HUSNAIN 🫂 Allah apko hmesha apni hifazat me rkhe ❤️✨
 </div>
 <p class="tiny">A letter tucked away just for you. ♡</p><button class="pill" style="margin-top:14px" onclick="go('video')">Ready for the final surprise? →</button></div></section>
 <section class="page center" id="video"><div class="section-head"><div class="eyebrow">The last little surprise</div><h2>Just for <span class="script">you</span></h2><p>I saved this part for last. Find your video here and press play whenever you're ready.</p></div><div class="panel video-frame" style="width:100%"><div class="video-box" id="videoBox"><div><div class="play-icon">▶</div><p>Your personalized video will appear here.</p><p style="font:12px Arial,sans-serif">Add your video as <b>assets/birthday-video.mp4</b></p></div></div><p class="final-note">Happy birthday, Bubu ka Dudu. I hope you felt the love behind every little part of this surprise. Here's to more laughter, more memories, and a year that is as wonderful as you deserve. ♡</p><div style="text-align:center;margin:15px 0;"><img src="https://ih1.redbubble.net/image.4859977192.7068/farp,x_large,wall_texture,product,750x1000.jpg" alt="Bubu and Dudu Hug" style="max-width:180px;width:100%;border-radius:18px;box-shadow:0 6px 16px rgba(112,67,86,0.15)"></div><button class="pill pink" onclick="sprinkle();document.getElementById('finalMsg').textContent='One more time: HAPPY BIRTHDAY, DUDU! 💗✨'">Send me one last wish ✨</button><p class="final-note" id="finalMsg"></p><p class="tiny">Made with love by your Bubu ♡</p></div></section>
-</main><div class="footer">A tiny birthday universe for Husnain Khan · Made with ♡</div>
+</main>
+
+<!-- Passcode Popup Modal -->
+<div class="passcode-modal" id="passcodeModal">
+  <div class="passcode-box">
+    <div style="font-size:36px">🔒💖</div>
+    <h3>Secret Passcode Required</h3>
+    <p>Enter the passcode to unlock your video surprise, Dudu!</p>
+    <input type="password" id="passcodeInput" placeholder="••••" maxlength="10">
+    <div class="passcode-error" id="passcodeError"></div>
+    <div class="passcode-actions">
+      <button class="light-btn" onclick="closePasscodeModal()">Cancel</button>
+      <button class="pill pink" onclick="verifyPasscode()">Unlock ♡</button>
+    </div>
+  </div>
+</div>
+
+<div class="footer">A tiny birthday universe for Husnain Khan · Made with ♡</div>
 <script>
-function go(id){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===id));window.scrollTo({top:0,behavior:'smooth'});}document.querySelectorAll('nav button').forEach(b=>b.addEventListener('click',()=>go(b.dataset.page)));
+// Passcode Configuration
+const SECRET_PASSCODE = "1004"; // CHANGE YOUR PASSCODE HERE
+let videoUnlocked = false;
+
+function go(id){
+  if(id === 'video' && !videoUnlocked){
+    openPasscodeModal();
+    return;
+  }
+  document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));
+  document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===id));
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function openPasscodeModal(){
+  const modal = document.getElementById('passcodeModal');
+  const input = document.getElementById('passcodeInput');
+  const err = document.getElementById('passcodeError');
+  input.value = '';
+  err.textContent = '';
+  modal.classList.add('show');
+  setTimeout(()=>input.focus(), 100);
+}
+
+function closePasscodeModal(){
+  document.getElementById('passcodeModal').classList.remove('show');
+}
+
+function verifyPasscode(){
+  const input = document.getElementById('passcodeInput').value.trim();
+  const err = document.getElementById('passcodeError');
+  if(input === SECRET_PASSCODE){
+    videoUnlocked = true;
+    closePasscodeModal();
+    go('video');
+    sprinkle();
+  } else {
+    err.textContent = 'Oops! Wrong passcode, try again Dudu 🥺';
+  }
+}
+
+document.getElementById('passcodeInput').addEventListener('keyup', function(e){
+  if(e.key === 'Enter') verifyPasscode();
+});
+
+document.querySelectorAll('nav button').forEach(b=>b.addEventListener('click',()=>go(b.dataset.page)));
 function sprinkle(){const symbols=['✨','💖','🎉','♡','🌸','🎈','💗'];for(let i=0;i<28;i++){const s=document.createElement('span');s.className='spark';s.textContent=symbols[Math.floor(Math.random()*symbols.length)];s.style.left=Math.random()*100+'vw';s.style.bottom='-30px';s.style.animationDelay=(Math.random()*.8)+'s';document.body.appendChild(s);setTimeout(()=>s.remove(),4400);}}
 let q=0,score=0,answered=false;const qs=[{q:'Who is the birthday star today?',o:['Husnain Khan ♡','A sleepy potato 🥔','Bubu ka Dudu 😎','All of the above 😂'],fb:'Correct answer: obviously ALL of the above. Iconic behaviour. 😂'},{q:'What should Dudu get more of this year?',o:['Peace and happiness 🌷','Success and big wins 🌟','Good food and naps 🍕','All of these, times a million 💗'],fb:'Yes! A whole year of good things is the only acceptable answer. 💗'},{q:'What is the best kind of memory?',o:['A laugh-until-it-hurts moment 😂','A little adventure 🌍','A peaceful conversation 🌙','Any moment that becomes special 🫶'],fb:'Awww. The best memories are the ones that become special because of the people in them. 🫶'},{q:'Final question: how much birthday love is being sent?',o:['A tiny bit','A whole truckload 🚚','To the moon and back 🌙','Impossible to measure 💞'],fb:'You got it, Dudu. The love is officially too big to measure. 💞'}];
 function answer(i){if(answered)return;answered=true;const x=qs[q];score++;document.getElementById('feedback').textContent=x.fb;document.getElementById('scoreText').textContent='Love points: '+score+' / 4';document.getElementById('meterFill').style.width=(score/4*100)+'%';document.querySelectorAll('#options button').forEach(b=>b.disabled=true);document.getElementById('nextQuestion').style.display=q<qs.length-1?'inline-block':'none';document.getElementById('gameFinish').style.display=q===qs.length-1?'inline-block':'none';if(q===qs.length-1){document.getElementById('question').textContent='You passed with flying colours, Dudu!';document.getElementById('questionCount').textContent='LOVE GAME COMPLETE';document.getElementById('options').style.display='none';sprinkle();}}
