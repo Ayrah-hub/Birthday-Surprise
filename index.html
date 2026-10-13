@@ -12,8 +12,8 @@
 /* Custom Scrollbar */
 .flip-card-back::-webkit-scrollbar{width:5px}.flip-card-back::-webkit-scrollbar-track{background:transparent}.flip-card-back::-webkit-scrollbar-thumb{background:#ffb4c9;border-radius:10px}
 
-/* Spin Wheel Styles */
-.wheel-container{position:relative;width:290px;height:290px;margin:20px auto}.wheel-pointer{position:absolute;top:-15px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:16px solid transparent;border-right:16px solid transparent;border-top:28px solid #ff6d9a;z-index:10;filter:drop-shadow(0 3px 6px rgba(0,0,0,0.2))}.wheel{width:100%;height:100%;border-radius:50%;border:8px solid #ffffff;box-shadow:0 10px 25px rgba(0,0,0,0.12);position:relative;overflow:hidden;transition:transform 4s cubic-bezier(0.15, 0.9, 0.25, 1);background:#ffe0eb}.wheel-sector{position:absolute;width:100%;height:50%;left:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px}.sector-bubu{top:0;background:linear-gradient(180deg,#ffd0e0,#ffe8f0);border-bottom:3px dashed #ffb4c9}.sector-dudu{bottom:0;background:linear-gradient(180deg,#e8ddff,#f3ebff)}.sector-img{width:60px;height:60px;object-fit:cover;border-radius:50%;border:2px solid #fff;box-shadow:0 4px 8px rgba(0,0,0,0.1);margin-bottom:4px}.sector-text{font:bold 14px Arial,sans-serif;color:#39283b}
+/* Spin Wheel Styles - Crisp White Background & Full Half-Frame Pictures */
+.wheel-container{position:relative;width:300px;height:300px;margin:20px auto}.wheel-pointer{position:absolute;top:-16px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:16px solid transparent;border-right:16px solid transparent;border-top:28px solid #ff6d9a;z-index:20;filter:drop-shadow(0 3px 6px rgba(0,0,0,0.2))}.wheel{width:100%;height:100%;border-radius:50%;border:8px solid #ffffff;box-shadow:0 12px 30px rgba(112,67,86,0.18);position:relative;overflow:hidden;transition:transform 4s cubic-bezier(0.15,0.9,0.25,1);background:#ffffff}.wheel-sector{position:absolute;width:100%;height:50%;left:0;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;background:#ffffff}.sector-bubu{top:0;border-bottom:2px solid #f3dce5}.sector-dudu{bottom:0}.wheel-sector img{width:100%;height:100%;object-fit:contain;background:#ffffff}.sector-text{position:absolute;z-index:5;font:bold 12px Arial,sans-serif;color:#39283b;background:rgba(255,255,255,0.85);padding:3px 10px;border-radius:12px;backdrop-filter:blur(4px);box-shadow:0 2px 6px rgba(0,0,0,0.1)}.sector-bubu .sector-text{bottom:8px}.sector-dudu .sector-text{top:8px}
 
 /* Corner Floating Stickers */
 .corner-sticker{position:fixed;bottom:12px;z-index:99;pointer-events:none;width:clamp(65px,12vw,100px);height:auto;filter:drop-shadow(0 4px 10px rgba(112,67,86,0.2));transition:transform .3s ease}.corner-left{left:12px}.corner-right{right:12px}.corner-sticker img{width:100%;height:auto;border-radius:18px}
@@ -29,7 +29,7 @@
   <img src="https://i.pinimg.com/736x/8f/58/e9/8f58e9949bfa89a4ff9e2b1ba42813ec.jpg" alt="Dudu Corner">
 </div>
 
-<header class="top"><div class="logo">♡ MADE WITH LOVE · FOR HUSNAIN</div><nav><button class="active" data-page="welcome">Start</button><button data-page="memories">Memories</button><button data-page="game">Love game</button><button data-page="wheel">Argument Wheel</button><button data-page="cake">Cake</button><button data-page="letter">Hidden letter</button><button data-page="video">Video finale</button></nav></header>
+<header class="top"><div class="logo">♡ MADE WITH LOVE ❤️  · FOR HUSNAIN KHAN </div><nav><button class="active" data-page="welcome">Start</button><button data-page="memories">Memories</button><button data-page="game">Love game</button><button data-page="wheel">Argument Wheel</button><button data-page="cake">Cake</button><button data-page="letter">Hidden letter</button><button data-page="video">Video finale</button></nav></header>
 <main>
 <section class="page active center" id="welcome"><div class="eyebrow">A secret little world made just for you</div><div class="decor">🎁 💌 ✨</div><h1 class="hero-title">For my <span class="script">LOVE</span></h1><p class="lead">Husnain Khan, this little corner of the internet is all yours. There are memories, a tiny game, a birthday wish, a letter I tucked away, and one last surprise. Take your time, Dudu. ♡</p><button class="pill pink" onclick="go('memories');sprinkle()">Unlock the surprises ♡</button><p class="tiny">Psst… explore every page. I saved something special for the end.</p></section>
 <section class="page" id="memories"><div class="section-head"><div class="eyebrow">Our little collection</div><h2>Little moments, <span class="script">big feelings</span></h2><p>Tap on any card to unlock the magic inside</p></div><div class="grid">
@@ -141,7 +141,7 @@ One more thing, once i said i like the word you called me randomly but not frequ
           <div class="sector-text">BUBU (Always Right! 👑)</div>
         </div>
         <div class="wheel-sector sector-dudu">
-         <img src="DUDU Lolypop.jfif" alt="Bubu">
+          <img src="DUDU Lolypop.jfif" alt="Dudu">
           <div class="sector-text">DUDU (Always Apologizing 😜)</div>
         </div>
       </div>
@@ -155,7 +155,7 @@ One more thing, once i said i like the word you called me randomly but not frequ
 <section class="page center" id="cake"><div class="section-head"><div class="eyebrow">Birthday magic time</div><h2>Make a wish, <span class="script">Dudu</span></h2><p>Close your eyes, make your biggest wish, then tap the button to blow out the candles.</p></div><div class="panel cake-area" style="max-width:620px;margin:auto;width:100%"><div style="text-align:center;margin-bottom:15px"><img src="https://ih1.redbubble.net/image.5345249491.3451/fposter,small,wall_texture,square_product,600x600.webp" alt="Bubu and Dudu Cake" style="max-width:220px;width:100%;border-radius:18px;box-shadow:0 6px 16px rgba(112,67,86,0.15)"></div><div class="cake-stage"><div class="candle c1"><div class="flame"></div></div><div class="candle c2"><div class="flame"></div></div><div class="candle c3"><div class="flame"></div></div><div class="cake"></div><div class="cake-face">♡ &nbsp; ♡</div></div><div class="wish" id="wishText">Your wish is safe with the universe…</div><button class="pill pink" id="blowBtn" onclick="blowCandles()">🌬️ Blow out the candles</button><p class="tiny" id="cakeNote">May this year bring you a hundred reasons to smile.</p><button class="light-btn" onclick="resetCake()">Light the candles again</button><div style="margin-top:22px"><button class="pill" onclick="go('letter')">There's a letter for you →</button></div></div></section>
 <section class="page center" id="letter"><div class="section-head"><div class="eyebrow">A little something from my heart</div><h2>Open when you're <span class="script">ready</span></h2><p>Some things are easier to write than to say out loud.</p></div><div class="panel letter" style="width:100%"><div class="envelope" id="envelope">💌</div><button class="pill pink" id="letterBtn" onclick="openLetter()">Open your hidden letter</button>
 <div class="letter-text" id="letterText" style="text-align: left;">
-Happiest Birthday Husnain 🥹❤️ 
+Happiest Birthday Husnain 🎂❤️ 
   
 Many Many happy returns of the day, I know shyd apko ye sab bchon wala lgta he kunk zyada hi mature ho gye ho Lekin me tu ye sb krongi apk liye hmesha 🌝
 
@@ -163,7 +163,7 @@ Idk k me apni feelings ko words mein kese explain krun, lekin bus itna janti hon
 
 Meri jaan,
 Me chahti hon k aap apni life mein bht aage jao, apne sare dreams pore kro Khrab mt socho k time guzr gya ya me kr nai skta, me ne dekha he k aap me bht himmat he bhr potential he kam krne ka ye me is liye nai keh rhi K aap mujhe psnd ho me ne esa waqyi dekha he 🤌🏻❤️‍🔥
-Me aap par bht yaqeen krti hon or krti rhongi always, even un dinon me b jb shyd aap khud par yaqeen nahi kar pao 🫂♥️
+Me aap par bht yaqeen krti hon or krti rhongi always, even un dinon me b jb shyd aap khud par yaqeen nahi kar pao 🙌🏻♥️
 Zindagi mein kbi mushkil waqt aye, kbi aap thak jao ya aap ko lge ke sb kuch bht difficult he tu sab se pehle Allah ko yaad krna or phr ye yad rkhna apne dil me k me apk sath hon chahe zindagi jesi b ho jaye. Me sirf baten nai kr rhi me apne andr himmat b la rhi hr trah k halat ko face krne ki. Me hmesha apka sath dongi 🥺🫂
 
 Meri life me pehle insan ho jise me ne apni family smja he or manti hon. Kbi mujhe mrd ache nai lge sirf apne baba ache lgte the or Ab meri hr dua me mere baba k bad apka nam hota he 🥺
@@ -171,7 +171,7 @@ Mujhe yaqen he ek din hm b family ki trah Khushi or sukon k sath rhenge 💗
 
 Me chahti hon or dua krti hon k aap ko hmesha esa pyar mile jo apko sukon de, himmat de or hmesha khushiyan de barkton k sath ✨
  
-Aur mere Mutke, men hmesha ye chahongi k meri wajah se apki life me sukoon, khushi aur muskurahat aaye kbi meri traf se apko dukh na mile 🥺🫂
+Aur mere Mutke, men hmesha ye chahongi k meri wajah se apki life me sukoon, khushi aur muskurahat aaye kbi meri traf se apko dukh na mile 🥺❤️
 
 Allah se meri dua hai k wo apko bht kamyab kre, apki zindagi ko khushiyon se bhar de aur apko wo sb ata kre jo apk liye behtareen ho 
 Ameen 🤲🏻❤️
@@ -179,8 +179,7 @@ Ameen 🤲🏻❤️
 Thank you meri life ka itna special part bnne k liye. Thank you meri duniya me apni jagah bnane se le kr meri duniya bnne k liye. Shyd me har bar apni muhabbat sahi tarah se express nhi kr pati, lekin mera dil apk liye bht kuch feel krta he jise me pori trah shyd kbi bta b na skon.
 I Love You more than I can ever explain 💋
 
-Happy Birthday Again, Mere mutke brown Colour ka Mera Mutka duduu 
-🐻❤️🐼 
+Happy Birthday Again, Mere mutke brown Colour ka Mera Mutka duduu 👩🏻‍❤️‍👨🏻
 
 <div style="text-align:center;margin:15px auto;"><img src="https://ih1.redbubble.net/image.4859977192.7068/farp,x_large,wall_texture,product,750x1000.jpg" alt="Bubu and Dudu Hug" style="max-width:180px;width:100%;border-radius:18px;box-shadow:0 6px 16px rgba(112,67,86,0.15)"></div>
 
@@ -188,11 +187,11 @@ Hmesha khush rahen, apna khayal rkhen aur kbi ye mt bholna k Koi he (BUBU RANI) 
 
 You deserve all the happiness with peace, you deserve the success InshaAllah your hard work will pay off one day and you will be thankful to yourself and Allah for that 💕
 
-I Love You So Much HUSNAIN 🫂 Allah apko hmesha apni hifazat me rkhe ❤️✨
+I Love You So Much HUSNAIN ❤️‍🔥 Allah apko hmesha apni hifazat me rkhe ✨
 </div>
 <p class="tiny">A letter tucked away just for you. ♡</p><button class="pill" style="margin-top:14px" onclick="go('video')">Ready for the final surprise? →</button></div></section>
 <section class="page center" id="video"><div class="section-head"><div class="eyebrow">The last little surprise</div><h2>Just for <span class="script">you</span></h2><p>I saved this part for last. Find your video here and press play whenever you're ready.</p></div><div class="panel video-frame" style="width:100%"><div class="video-box" id="videoBox"><div><div class="play-icon">▶</div><p>Your personalized video will appear here.</p><p style="font:12px Arial,sans-serif">Add your video as <b>assets/birthday-video.mp4</b></p></div></div><p class="final-note">Happy birthday, Bubu ka Dudu. I hope you felt the love behind every little part of this surprise. Here's to more laughter, more memories, and a year that is as wonderful as you deserve. ♡</p><div style="text-align:center;margin:15px 0;"><img src="https://ih1.redbubble.net/image.4859977192.7068/farp,x_large,wall_texture,product,750x1000.jpg" alt="Bubu and Dudu Hug" style="max-width:180px;width:100%;border-radius:18px;box-shadow:0 6px 16px rgba(112,67,86,0.15)"></div><button class="pill pink" onclick="sprinkle();document.getElementById('finalMsg').textContent='One more time: HAPPY BIRTHDAY, DUDU! 💗✨'">Send me one last wish ✨</button><p class="final-note" id="finalMsg"></p><p class="tiny">Made with love by your Bubu ♡</p></div></section>
-</main><div class="footer">A tiny birthday universe for Husnain Khan · Made with ♡</div>
+</main><div class="footer">A tiny birthday universe for Husnain Khan · Made with ♡ ❤️</div>
 <script>
 function go(id){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===id));window.scrollTo({top:0,behavior:'smooth'});}document.querySelectorAll('nav button').forEach(b=>b.addEventListener('click',()=>go(b.dataset.page)));
 function sprinkle(){const symbols=['✨','💖','🎉','♡','🌸','🎈','💗'];for(let i=0;i<28;i++){const s=document.createElement('span');s.className='spark';s.textContent=symbols[Math.floor(Math.random()*symbols.length)];s.style.left=Math.random()*100+'vw';s.style.bottom='-30px';s.style.animationDelay=(Math.random()*.8)+'s';document.body.appendChild(s);setTimeout(()=>s.remove(),4400);}}
